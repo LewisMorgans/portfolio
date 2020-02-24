@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+
+body {
+  z-index: 10;
+
+}
+
+.aboutContainer {
+    background: rgb(94,37,99);
+    background: linear-gradient(0deg, rgba(94,37,99,1) 0%, rgba(101,118,153,1) 50%);
+}
+
+#about-section {
+
+  font-family: "Montserrat";
+  text-align: center;
+  font-weight: 470;
+  .profilePic {
+    border-radius: 45%;
+    width: 300px;
+    margin-top: 20px;
+  }
+}
