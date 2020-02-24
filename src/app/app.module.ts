@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { IndexComponent } from './pages/index/index.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    IndexComponent
+    IndexComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

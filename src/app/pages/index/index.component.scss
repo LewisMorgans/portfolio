@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
 
-#arrow {
+#arrow-container {
   position: absolute;
   left: 50%;
   top: 75%;
@@ -26,6 +26,7 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 
+
     h1 {
       color: #08fdd8;
       font-weight: 100;
@@ -46,4 +47,43 @@
       text-transform: uppercase;
     }
   }
+}
+
+.arrow {
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+.flyIn {
+  animation-name: push;
+  animation-duration: 1.4s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-55px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes push{
+  0%{
+    transform : translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
 }
