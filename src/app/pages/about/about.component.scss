@@ -5,19 +5,25 @@ body {
 }
 
 .aboutContainer {
-  background-color: white;
-  // background: linear-gradient(0deg, rgba(94,37,99,1) 0%, rgba(101,118,153,1) 50%);
+  background-color: #252934;
 }
 
 #about-section {
   font-family: "Montserrat";
   text-align: center;
   font-weight: 470;
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
 
   .profilePic {
-    border-radius: 45%;
+    margin-top: 65px;
+    left: 10%;
     width: 300px;
-    margin-top: 20px;
+    transform: rotate(-5deg) !important;
+    border: 5px white solid;
+    filter: brightness(75%);
+    filter: grayscale(75%);
   }
   .title {
     p {
@@ -27,7 +33,12 @@ body {
       font-weight: 200;
       font-size: 74px;
       line-height: 1;
+      filter: brightness(150%);
     }
-
   }
+}
+
+hr {
+  margin: 0;
+  width: 50%;
 }
