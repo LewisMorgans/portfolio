@@ -20,12 +20,11 @@
 #particles-js {
   font-family: "Montserrat";
   text-align: center;
-  background-color: #252934;
+  background-color: #1A1A1D; // 252934
   width: 100%;
-  height: 100%;
-  z-index: -10;
-
-
+  height: 110%;
+  z-index: 10;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 
   #title {
     position: absolute;
@@ -93,3 +92,11 @@
   }
 
 }
+
+.container-fluid {
+  background: rgb(57,13,12);
+background: linear-gradient(90deg, rgba(57,13,12,1) 36%, rgba(69,29,11,1) 80%);
+
+  z-index: -10;
+}
+

@@ -6,13 +6,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { IndexComponent } from './pages/index/index.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AboutComponent } from './pages/about/about.component';
+import { SkillsComponentComponent } from './pages/skills-component/skills-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     IndexComponent,
-    AboutComponent
+    AboutComponent,
+    SkillsComponentComponent
   ],
   imports: [
     BrowserModule,

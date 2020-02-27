@@ -1,11 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
 
-body {
-  z-index: 10;
+.aboutContainer {
+  //background-color: #2e1114; // 1A1A1D?? #100E17
+  background: rgb(57, 13, 12);
+  background: linear-gradient(90deg, rgba(57, 13, 12, 1) 36%, rgba(69, 29, 11, 1) 80%);
+  clip-path: polygon(100% 100%, 0 90%, 0 0, 100% 0);
+  padding-bottom: 15%;
+  padding-top: 5%;
+
 }
 
-.aboutContainer {
-  background-color: #252934;
+.container-fluid {
+  background: #3a6186;  
+  background: linear-gradient(to right, #89253e, #3a6186);
+  z-index: -10;
+  
 }
 
 #about-section {
@@ -14,7 +23,6 @@ body {
   font-weight: 470;
   color: white;
   padding-top: 5%;
-  padding-bottom: 5%;
 
   .profilePic {
     margin-top: 65px;
@@ -36,9 +44,4 @@ body {
       filter: brightness(150%);
     }
   }
-}
-
-hr {
-  margin: 0;
-  width: 50%;
 }

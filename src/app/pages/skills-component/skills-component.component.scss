@@ -1,0 +1,23 @@
+* {
+    padding: 0 ;
+    margin: 0 
+}
+
+
+.skillsContainer {
+  background: #3a6186;
+  background: linear-gradient(
+    to right,
+    #89253e,
+    #3a6186
+  );
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat";
+  text-align: center;
+  font-weight: 470;
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 12%;
+  margin: none !important;
+}
