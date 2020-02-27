@@ -10,9 +10,24 @@
 
 }
 
+@media only screen and (max-width: 885px) {
+  .aboutContainer {
+    padding-bottom: 25% !important;
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  .aboutContainer {
+    padding-bottom: 65% !important;
+  }
+}
+
 .container-fluid {
-  background: #3a6186;  
-  background: linear-gradient(to right, #89253e, #3a6186);
+  background: #16222A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
   z-index: -10;
   
 }
