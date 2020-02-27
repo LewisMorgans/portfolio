@@ -7,7 +7,6 @@
   clip-path: polygon(100% 100%, 0 90%, 0 0, 100% 0);
   padding-bottom: 15%;
   padding-top: 5%;
-
 }
 
 @media only screen and (max-width: 885px) {
@@ -23,13 +22,15 @@
 }
 
 .container-fluid {
-  background: #16222A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #16222a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #3a6073, #16222a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #3a6073,
+    #16222a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   z-index: -10;
-  
 }
 
 #about-section {
@@ -50,7 +51,14 @@
   }
   .title {
     p {
-      background: linear-gradient(0deg, rgba(94, 37, 99, 1) 0%, rgba(101, 118, 153, 1) 50%);
+      background: #304352; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to top, #d7d2cc, #304352); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to top,
+        #d7d2cc,
+        #304352
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
       background-clip: text;
       color: transparent;
       font-weight: 200;
