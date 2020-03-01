@@ -7,6 +7,8 @@ import { IndexComponent } from './pages/index/index.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AboutComponent } from './pages/about/about.component';
 import { SkillsComponentComponent } from './pages/skills-component/skills-component.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SkillsComponentComponent } from './pages/skills-component/skills-compon
     NavbarComponent,
     IndexComponent,
     AboutComponent,
-    SkillsComponentComponent
+    SkillsComponentComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

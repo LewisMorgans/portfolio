@@ -1,13 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+
 * {
     padding: 0 ;
     margin: 0 
 }
+.container-fluid {
+  background: #304352;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
 
 
 .skillsContainer {
   background: #16222A;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  clip-path: polygon(51% 0, 100% 0, 100% 100%, 54% 80%, 22% 94%, 0 81%, 0 0);
   
   height: 100%;
   width: 100%;
@@ -18,4 +28,22 @@
   padding-top: 5%;
   padding-bottom: 12%;
   margin: none !important;
+}
+
+@media only screen and (max-width: 1541px) {
+  .skillsContainer {
+    padding-bottom: 25% !important;
+  }
+}
+
+@media only screen and (max-width: 756px) {
+  .skillsContainer {
+    padding-bottom: 45% !important;
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  .skillsContainer {
+    padding-bottom: 85% !important;
+  }
 }
