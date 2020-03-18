@@ -1,19 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { HttpClient, HttpResponse } from '@angular/common/http';
-import { Observable, EMPTY } from 'rxjs';
-
-export interface ErrorResponse {
-  httpCode: number,
-  reason: string,
-  message: string
-}
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
+
 export class ContactComponent implements OnInit {
 
   public contactForm: FormGroup
@@ -24,12 +18,10 @@ export class ContactComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
     this.intialiseForm();
-
   }
 
-  private intialiseForm() {
+  private intialiseForm(): void {
     this.contactForm = this._fb.group({
       email: ['', Validators.required],
       name: ['', Validators.required],
@@ -42,18 +34,16 @@ export class ContactComponent implements OnInit {
 
   public submitForm(): void {
 
-    let payload = {
-      ...this.contactForm.value
-    };
+    let payload = { ...this.contactForm.value };
 
     this._http.post('/api/mail', payload)
-      .subscribe(resp => {
+      .subscribe(_ => {
         this.contactForm.reset();
-        console.log(resp)
-        if(resp instanceof ErrorResponse)
+        alert('Message Sent');
       },
         (error) => {
           console.log('error', error);
+          alert(error.reason)
         })
   }
 

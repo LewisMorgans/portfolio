@@ -20,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     SkillsComponentComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
