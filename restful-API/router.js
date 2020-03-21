@@ -25,6 +25,7 @@ router.post('/mail', (req, res) => {
         })
         .catch(error => {
             res.send({
+                API: process.env.SENDGRID_API_KEY,
                 httpCode: error.code,
                 reason: error.message,
                 message: error.response.body.errors[0].message
