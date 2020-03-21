@@ -26,26 +26,25 @@ export class ContactComponent implements OnInit {
       email: ['', Validators.required],
       name: ['', Validators.required],
       subject: ['', Validators.required],
-      message: ['', Validators.required],
-      emailOption: ['', Validators.required]
+      message: ['', Validators.required]
     });
     this.contactForm.valid;
   }
 
   public submitForm(): void {
 
-    let payload = { ...this.contactForm.value };
+  let payload = { ...this.contactForm.value };
 
-    this._http.post('/api/mail', payload)
-      .subscribe(_ => {
-        this.contactForm.reset();
-        alert('Message Sent');
-      },
-        (error) => {
-          console.log('error', error);
-          alert(error.reason)
-        })
-  }
+  this._http.post('/api/mail', payload)
+    .subscribe(_ => {
+      this.contactForm.reset();
+      alert('Message Sent');
+    },
+      (error) => {
+        console.log('error', error);
+        alert(error.reason)
+      })
+}
 
 
 

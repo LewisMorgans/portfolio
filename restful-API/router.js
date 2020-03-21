@@ -11,8 +11,6 @@ router.use(bodyParser.json());
 // REST
 router.post('/mail', (req, res) => {
 
-    console.log(req.body)
-
     const msg = {
         to: 'lmorgans90@gmail.com',
         from: req.body.email,
