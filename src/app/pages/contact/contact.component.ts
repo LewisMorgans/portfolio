@@ -36,14 +36,11 @@ export class ContactComponent implements OnInit {
   let payload = { ...this.contactForm.value };
 
   this._http.post('/api/mail', payload)
-    .subscribe(_ => {
-      this.contactForm.reset();
-      alert('Message Sent');
-    },
-      (error) => {
-        console.log('error', error);
-        alert(error.reason)
-      })
+    .subscribe(resp => {
+
+      console.log(resp)
+      
+    })
 }
 
 
