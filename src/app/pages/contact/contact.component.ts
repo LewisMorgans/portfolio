@@ -33,16 +33,12 @@ export class ContactComponent implements OnInit {
 
   public submitForm(): void {
 
-  let payload = { ...this.contactForm.value };
+    let payload = { ...this.contactForm.value };
 
-  this._http.post('/api/mail', payload)
-    .subscribe(resp => {
-
-      console.log(resp)
-      
-    })
-}
-
-
-
+    this._http.post('/api/mail', payload)
+      .subscribe(resp => {
+        this.contactForm.reset();
+        // add error handling here
+      });
+  }
 }
