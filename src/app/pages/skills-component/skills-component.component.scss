@@ -57,6 +57,6 @@ img {
 
 @media only screen and (max-width: 513px) {
   .skillsContainer {
-    padding-bottom: 85% !important;
+    clip-path: none;
   }
 }

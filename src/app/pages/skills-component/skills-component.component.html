@@ -1,11 +1,22 @@
 <div class="container-fluid">
   <section id="#skills"></section>
-  <div class="skillsContainer row align-items-center">
-    <div id="about-section" class="col-lg-6 mx-auto ">
-      <div class="col-md-6 mx-auto">
-        <img src="./assets/img/error.svg">
-        <h1>Comming Soon</h1>
+  <div class="skillsContainer row">
+    <div class="col-md-6">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi architecto aliquam numquam blanditiis in unde
+      ducimus itaque nisi ipsam consequatur! Atque vero ducimus modi perferendis consequuntur quidem laudantium commodi
+      odit.
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-2 mx-auto" id="about-section" *ngFor="let skill of skillsMap | keyvalue: 0">
+          <circle-progress [percent]="skill.value" [radius]="100" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#A33931'" [responsive]=true [innerStrokeColor]="'#0ae1c2'" [title]="skill.key"
+            [subtitle]="''" [titleColor]="'#FFF'" [animation]="true" [animationDuration]="300">
+          </circle-progress>
+        </div>
+
       </div>
     </div>
+
   </div>
 </div>
