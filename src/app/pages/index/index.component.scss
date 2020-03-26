@@ -11,9 +11,8 @@
 .logo {
   position: absolute;
   height: 15%;
-  width: 15%;
   left: 50%;
-  top: 25%;
+  top: 33%;
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -34,11 +33,14 @@
 
     h1 {
       color: #08fdd8;
-      font-weight: 100;
-      font-size: 74px;
+      font-weight: 200;
+      font-size: 35px;
       padding: 0;
       margin: 0;
       line-height: 1;
+      letter-spacing: 7.5px;
+      text-transform: uppercase;
+      word-wrap: break-word;
     }
 
     h3 {
