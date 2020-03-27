@@ -12,6 +12,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    ChartsModule,
     MDBBootstrapModule.forRoot() ,
     NgCircleProgressModule.forRoot({
       radius: 100,

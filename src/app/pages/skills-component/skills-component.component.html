@@ -1,22 +1,37 @@
 <div class="container-fluid">
   <section id="#skills"></section>
   <div class="skillsContainer row">
-    <div class="col-md-6">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi architecto aliquam numquam blanditiis in unde
-      ducimus itaque nisi ipsam consequatur! Atque vero ducimus modi perferendis consequuntur quidem laudantium commodi
-      odit.
+    <div class="col-md-4 mx-auto">
+      Throughout my years as a Software Engineer I have learned multiple skills to allow me to create scalable
+      applications that are both performance conscious and reliable. I'm able to do this by ensuring to keep up to date
+      with the latest frame works and libraries, along with using the strongest language for front end development,
+      which in my professional opinion is TypeScript.
+      <br><br>
+      Feel free to take a look at some of the skills I can offer, all achieved through industry experience and rigorous
+      self taught training. Among the larger industries I've worked with has been the multinational insurance provider
+      Admiral, for whom I completed several projects including a rewrite of the quotation engine. This involved
+      streamlining the engine which now offers supercharged performance, stability and future scalability. Another
+      multinational company I've spent time with is Keytree, a software consultancy firm offering software solutions to
+      industry giants such as British Petroleum, Vodafone and The Greater London Authority. A notable achievement here
+      was building a mobile application called "TravelSafe", offering safety information, location security and several
+      other features to travelling employees.
+      <br><br>
+      All of this was made possible with the skills you see on the right - and I'm just getting started.
+      <br><br>
+      Notably, alongside my strong technical skills I have also gained several soft skills such as chairing agile
+      ceremonies, daily stand ups and coaching. I have built excellent communication skills, being able to mediate
+      between stakeholders and engineers alike, contributing and challenging decisions in sprint planning sessions and
+      retro reviews. I am able to conduct investigations, code reviews and timebox project work with accuracy.
     </div>
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-md-2 mx-auto" id="about-section" *ngFor="let skill of skillsMap | keyvalue: 0">
-          <circle-progress [percent]="skill.value" [radius]="100" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#A33931'" [responsive]=true [innerStrokeColor]="'#0ae1c2'" [title]="skill.key"
-            [subtitle]="''" [titleColor]="'#FFF'" [animation]="true" [animationDuration]="300">
-          </circle-progress>
-        </div>
-
+    <div class="col-md-4 mx-auto skillsTitle">
+      <h3>SKILLS</h3>
+    </div>
+    <div class="col-md-4 mx-auto ">
+      <div style="display: block">
+        <canvas mdbChart [height]="300" [chartType]="'horizontalBar'" [datasets]="chartDatasets" [labels]="chartLabels"
+          [colors]="chartColors" [options]="chartOptions">
+        </canvas>
       </div>
     </div>
-
   </div>
 </div>

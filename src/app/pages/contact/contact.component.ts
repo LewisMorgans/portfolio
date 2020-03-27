@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
+type Response = {
+  httpCode: number,
+  errorReason: string
+}
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -35,10 +40,14 @@ export class ContactComponent implements OnInit {
 
     let payload = { ...this.contactForm.value };
 
-    this._http.post('/api/mail', payload)
+    this._http.post<Response>('/api/mail', payload)
       .subscribe(resp => {
-        this.contactForm.reset();
-        // add error handling here
+        if(resp.httpCode !== 200) {
+          alert(resp.errorReason);
+        } else {
+          alert('Message Sent');
+          this.contactForm.reset();
+        }
       });
   }
 }

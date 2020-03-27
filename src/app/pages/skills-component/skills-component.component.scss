@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
 
+@font-face {
+  font-family: skillsFont;
+  src: url('../../../assets/fonts/midnightsnack-bb.regular.ttf');
+};
+
 * {
     padding: 0 ;
     margin: 0 
@@ -16,6 +21,23 @@ img {
   margin:auto;
 }
 
+.skillsTitle {
+  font-family: skillsFont;
+  writing-mode: vertical-rl;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-orientation: upright;
+  letter-spacing: 55px; 
+  color: #0AE1C2;
+  cursor: context-menu;
+
+  h3 {
+    font-size: 5em;
+  }
+
+}
+
 
 .skillsContainer {
   background: #16222A;  /* fallback for old browsers */
@@ -26,10 +48,12 @@ img {
   height: 100%;
   width: 100%;
   font-family: "Montserrat";
-  text-align: center;
+  text-align: left;
   font-weight: 470;
   color: white;
-  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5% !important;
   padding-bottom: 12%;
   margin: none !important;
 
@@ -58,5 +82,20 @@ img {
 @media only screen and (max-width: 513px) {
   .skillsContainer {
     clip-path: none;
+  };
+
+  .skillsTitle {
+    font-family: skillsFont;
+    writing-mode: horizontal-tb;
+    h3 {
+      font-size: 2em;
+      letter-spacing: 20px; 
+      margin: 25px;
+    }
+  
+    // h3 {
+    //   font-size: 5em;
+    // }
+  
   }
 }
