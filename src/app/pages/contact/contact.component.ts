@@ -45,7 +45,7 @@ export class ContactComponent implements OnInit {
         if(resp.httpCode !== 200) {
           alert(resp.errorReason);
         } else {
-          alert('Message Sent');
+          alert('Message Sent' + resp.httpCode);
           this.contactForm.reset();
         }
       });

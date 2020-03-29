@@ -122,15 +122,16 @@ export class SkillsComponentComponent implements OnInit {
   ];
 
   public chartOptions: any = {
-    colors: 'red',
     responsive: true,
     scales: {
       xAxes: [{
-        gridLines: {
-          color: "rgba(255,255,255,0.5)",
-          zeroLineColor: "rgba(255,255,255,0.5)"
-        }
+        ticks: { fontColor: 'white' },
+        gridLines: { color: 'rgba(255,255,255,0.4)' }
       }],
+      yAxes: [{
+        ticks: { fontColor: 'white' },
+        gridLines: { color: 'rgba(255,255,255,0.4)' }
+      }]
     }
   }
 }

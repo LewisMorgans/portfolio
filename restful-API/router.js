@@ -12,7 +12,7 @@ router.use(bodyParser.json());
 router.post('/mail', (req, res) => {
 
     const msg = {
-        to: 'lmorgans90@gmail.com',
+        to: 'lewis.morgans@weareswift.uk',
         from: req.body.email,
         subject: req.body.subject,
         text: req.body.message
