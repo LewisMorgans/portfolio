@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: titleFont;
-  src: url('../../../assets/fonts/midnightsnack-bb.regular.ttf');
-};
+  src: url("../../../assets/fonts/midnightsnack-bb.regular.ttf");
+}
 
 .container-fluid {
   background: #304352; /* fallback for old browsers */
@@ -17,21 +17,57 @@
   padding-top: 0px;
 }
 
-
 .title {
   font-family: skillsFont;
-  letter-spacing: 55px; 
-  font-size: clamp(55px, 3vw, 100px);
-  color: #7A3C3A;
+  letter-spacing: 25px;
+  color: #7a3c3a;
+  cursor: context-menu;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 200;
+  font-size: 59px;
+  line-height: 1;
+  filter: brightness(0.9);
+}
+.title2 {
+  font-family: skillsFont;
+  letter-spacing: 55px;
+  font-size: clamp(35px, 3vw, 30px);
+  color: #7a3c3a;
   cursor: context-menu;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
-
 }
 
- @media only screen and (max-width: 513px) {
+@media only screen and (max-width: 513px) {
   .title {
-    letter-spacing: 7px;
+    letter-spacing: 0px;
+    font-size: 52px;
   }
-} 
+
+  .title2 {
+    letter-spacing: 7px;
+    font-size: 35px;
+  }
+}
+
+.card {
+  border-color: #0ae1c2;
+  .card-body {
+    background-color: #1a1a1d;
+    color: white;
+  }
+  .btn {
+    background-color: #0ae1c2;
+    transition: ease 0.2s all;
+  }
+
+  .btn:hover {
+    transform: scale(1.2);
+  }
+
+  hr {
+    background-color: #0ae1c2;
+  }
+}

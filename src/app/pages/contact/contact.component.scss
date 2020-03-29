@@ -1,21 +1,43 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
 
 .container-fluid {
-    background: #1D4350;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+  background: #1d4350; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a43931, #1d4350); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a43931,
+    #1d4350
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #contactForm {
-    padding: 5%;
-    font-family: "Montserrat";
-    text-align: center;
-    font-weight: 470;
-    color: white;
+  padding: 5%;
+  font-family: "Montserrat";
+  text-align: center;
+  font-weight: 470;
+  color: white;
 
-    .btn {
-        background-color: #0AE1C2;
-    }
+  .btn {
+    background-color: #0ae1c2;
+  }
+}
 
+.title {
+  font-family: skillsFont;
+  letter-spacing: 25px;
+  color: #0ae1c2;
+  cursor: context-menu;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 200;
+  font-size: 59px;
+  line-height: 1;
+  filter: brightness(0.9);
+}
+
+@media only screen and (max-width: 513px) {
+  .title {
+    letter-spacing: 0px;
+    font-size: 55px;
+  }
 }
