@@ -2,49 +2,55 @@
 
 @font-face {
   font-family: skillsFont;
-  src: url('../../../assets/fonts/midnightsnack-bb.regular.ttf');
-};
+  src: url("../../../assets/fonts/midnightsnack-bb.regular.ttf");
+}
 
 * {
-    padding: 0 ;
-    margin: 0 
+  padding: 0;
+  margin: 0;
 }
+
 .container-fluid {
-  background: #304352;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #304352; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #d7d2cc, #304352); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #d7d2cc,
+    #304352
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 img {
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
 }
 
 .skillsTitle {
   font-family: skillsFont;
   writing-mode: vertical-rl;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-orientation: upright;
-  letter-spacing: 55px; 
-  color: #0AE1C2;
+  letter-spacing: 55px;
+  color: #0ae1c2;
   cursor: context-menu;
 
   h3 {
     font-size: 5em;
   }
-
 }
 
-
 .skillsContainer {
-  background: #16222A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #16222a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #3a6073, #16222a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #3a6073,
+    #16222a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   clip-path: polygon(51% 0, 100% 0, 100% 100%, 54% 80%, 22% 94%, 0 81%, 0 0);
-  
+
   height: 100%;
   width: 100%;
   font-family: "Montserrat";
@@ -64,7 +70,16 @@ img {
     border-radius: 50%;
     display: inline-block;
   }
+}
 
+.skillsTitle {
+  font-family: skillsFont;
+  writing-mode: horizontal-tb;
+  h3 {
+    font-size: 2em;
+    letter-spacing: 20px;
+    margin: 25px;
+  }
 }
 
 @media only screen and (max-width: 1541px) {
@@ -82,20 +97,5 @@ img {
 @media only screen and (max-width: 513px) {
   .skillsContainer {
     clip-path: none;
-  };
-
-  .skillsTitle {
-    font-family: skillsFont;
-    writing-mode: horizontal-tb;
-    h3 {
-      font-size: 2em;
-      letter-spacing: 20px; 
-      margin: 25px;
-    }
-  
-    // h3 {
-    //   font-size: 5em;
-    // }
-  
   }
 }

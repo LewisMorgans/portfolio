@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+.container-fluid {
+  background: #16222a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #3a6073, #16222a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #3a6073,
+    #16222a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  z-index: -10;
+}
 
 .text {
-  margin-top: 55px
+  margin-top: 55px;
 }
 .title {
   font-family: skillsFont;
@@ -13,45 +24,11 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 513px) {
-  .title {
-    letter-spacing: 0px;
-  }
-}
-
 .aboutContainer {
-  //background-color: #2e1114; // 1A1A1D?? #100E17
-  background: rgb(57, 13, 12);
   background: linear-gradient(90deg, rgba(57, 13, 12, 1) 36%, rgba(69, 29, 11, 1) 80%);
   clip-path: polygon(100% 100%, 0 90%, 0 0, 100% 0);
   padding-bottom: 15%;
   padding-top: 5%;
-
-
-}
-
-@media only screen and (max-width: 885px) {
-  .aboutContainer {
-    padding-bottom: 25% !important;
-  }
-}
-
-@media only screen and (max-width: 513px) {
-  .aboutContainer {
-    padding-bottom: 65% !important;
-  }
-}
-
-.container-fluid {
-  background: #16222a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #3a6073, #16222a); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #3a6073,
-    #16222a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  z-index: -10;
 }
 
 #about-section {
@@ -89,5 +66,22 @@
       line-height: 1;
       filter: brightness(150%);
     }
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  .title {
+    letter-spacing: 0px;
+  }
+}
+@media only screen and (max-width: 885px) {
+  .aboutContainer {
+    padding-bottom: 25% !important;
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  .aboutContainer {
+    padding-bottom: 65% !important;
   }
 }

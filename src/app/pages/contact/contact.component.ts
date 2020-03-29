@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { wysiwyg } from 'src/app/config/wysiwyg/wysiwyg.component';
@@ -21,8 +21,7 @@ export class ContactComponent implements OnInit {
 
   constructor(
     private readonly _fb: FormBuilder,
-    private readonly _http: HttpClient,
-    // private readonly _editor: editorConfig
+    private readonly _http: HttpClient
   ) { }
 
   ngOnInit(): void {
@@ -45,7 +44,7 @@ export class ContactComponent implements OnInit {
 
     this._http.post<Response>('/api/mail', payload)
       .subscribe(resp => {
-        if(resp.httpCode !== 200) {
+        if (resp.httpCode !== 200) {
           alert(resp.errorReason);
         } else {
           alert('Message Sent');

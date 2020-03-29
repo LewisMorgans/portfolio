@@ -2,10 +2,12 @@
     <section id="#contact"></section>
     <div class="row" id="contactForm">
         <div class="col-md-6 mx-auto">
-            <form  [formGroup]="contactForm" class="text-center " action="#!">
+            <form [formGroup]="contactForm" class="text-center " action="#!">
                 <p class="h4 mb-4 title">Contact Us</p>
-                <input formControlName="name" type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
-                <input formControlName="email" type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+                <input formControlName="name" type="text" id="defaultContactFormName" class="form-control mb-4"
+                    placeholder="Name">
+                <input formControlName="email" type="email" id="defaultContactFormEmail" class="form-control mb-4"
+                    placeholder="E-mail">
                 <label>Subject</label>
                 <select formControlName="subject" class="browser-default custom-select mb-4">
                     <option value="" disabled>Choose option</option>
@@ -15,11 +17,12 @@
                     <option value="4">I'd Like to connect</option>
                 </select>
                 <div class="form-group">
-                    <textarea formControlName="message" class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
-                        placeholder="Message"></textarea>
+                    <textarea formControlName="message" class="form-control rounded-0" id="exampleFormControlTextarea2"
+                        rows="3" placeholder="Message"></textarea>
                 </div>
-                <button class="btn btn-info btn-block" type="button" (click)="submitForm()" [disabled]="contactForm.invalid">Send</button>
-                 </form>
+                <button class="btn btn-info btn-block" type="button" (click)="submitForm()"
+                    [disabled]="contactForm.invalid">Send</button>
+            </form>
         </div>
     </div>
 </div>

@@ -17,7 +17,7 @@ export class IndexComponent implements OnInit {
   }
 
   public invokeParticles(): void {
-    particlesJS('particles-js', particlesConfig, function() {});
+    particlesJS('particles-js', particlesConfig, function () { });
   }
 
 }
