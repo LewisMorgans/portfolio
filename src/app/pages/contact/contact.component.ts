@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { wysiwyg } from 'src/app/config/wysiwyg/wysiwyg.component';
 
 type Response = {
   httpCode: number,
@@ -15,11 +16,13 @@ type Response = {
 
 export class ContactComponent implements OnInit {
 
-  public contactForm: FormGroup
+  public contactForm: FormGroup;
+  public wysiwyg = new wysiwyg();
 
   constructor(
     private readonly _fb: FormBuilder,
-    private readonly _http: HttpClient
+    private readonly _http: HttpClient,
+    // private readonly _editor: editorConfig
   ) { }
 
   ngOnInit(): void {
@@ -45,7 +48,7 @@ export class ContactComponent implements OnInit {
         if(resp.httpCode !== 200) {
           alert(resp.errorReason);
         } else {
-          alert('Message Sent' + resp.httpCode);
+          alert('Message Sent');
           this.contactForm.reset();
         }
       });
