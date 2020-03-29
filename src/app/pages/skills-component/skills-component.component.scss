@@ -72,16 +72,6 @@ img {
   }
 }
 
-.skillsTitle {
-  font-family: skillsFont;
-  writing-mode: horizontal-tb;
-  h3 {
-    font-size: 2em;
-    letter-spacing: 20px;
-    margin: 25px;
-  }
-}
-
 @media only screen and (max-width: 1541px) {
   .skillsContainer {
     padding-bottom: 25% !important;
@@ -97,5 +87,15 @@ img {
 @media only screen and (max-width: 513px) {
   .skillsContainer {
     clip-path: none;
+  }
+
+  .skillsTitle {
+    font-family: skillsFont;
+    writing-mode: horizontal-tb;
+    h3 {
+      font-size: 2em;
+      letter-spacing: 20px;
+      margin: 25px;
+    }
   }
 }
