@@ -39,8 +39,11 @@ export class ContactComponent implements OnInit {
   }
 
   public submitForm(): void {
-
-    let payload = { ...this.contactForm.value };
+    const message = JSON.stringify(this.contactForm.get('message'));
+    let payload = {
+      ...this.contactForm.value,
+      message
+    };
 
     this._http.post<Response>('/api/mail', payload)
       .subscribe(resp => {
@@ -48,7 +51,7 @@ export class ContactComponent implements OnInit {
           alert(resp.errorReason);
         } else {
           alert('Message Sent');
-          this.contactForm.reset();
+          this.intialiseForm();
         }
       });
   }

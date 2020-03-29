@@ -10,15 +10,15 @@
                     placeholder="E-mail">
                 <label>Subject</label>
                 <select formControlName="subject" class="browser-default custom-select mb-4">
-                    <option value="" disabled>Choose option</option>
-                    <option value="1" selected>Temporary Contract</option>
-                    <option value="2">Permanant Contract</option>
-                    <option value="3">General Query</option>
-                    <option value="4">I'd Like to connect</option>
+                    <option value="Choose option" disabled>Choose option</option>
+                    <option value="Temporary Contract" selected>Temporary Contract</option>
+                    <option value="Permanant Contract">Permanant Contract</option>
+                    <option value="General Query">General Query</option>
+                    <option value="I'd Like to connect">I'd Like to connect</option>
                 </select>
                 <div class="form-group">
                     <textarea formControlName="message" class="form-control rounded-0" id="exampleFormControlTextarea2"
-                        rows="3" placeholder="Message"></textarea>
+                        rows="5" placeholder="Message"></textarea>
                 </div>
                 <button class="btn btn-info btn-block" type="button" (click)="submitForm()"
                     [disabled]="contactForm.invalid">Send</button>
