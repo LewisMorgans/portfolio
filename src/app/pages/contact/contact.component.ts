@@ -39,7 +39,8 @@ export class ContactComponent implements OnInit {
   }
 
   public submitForm(): void {
-    const message = JSON.stringify(this.contactForm.get('message'));
+    const message = JSON.stringify(this.contactForm.get('message').value);
+    console.log(message)
     let payload = {
       ...this.contactForm.value,
       message
