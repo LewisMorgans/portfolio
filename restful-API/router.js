@@ -10,6 +10,8 @@ router.use(bodyParser.json());
 
 // REST
 router.post('/mail', (req, res) => {
+    console.log(process.env.SENDGRID_API_KEY);
+    console.log(req.body)
 
     const msg = {
         to: 'lewis.morgans@weareswift.uk',

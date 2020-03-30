@@ -18,6 +18,8 @@ export class ContactComponent implements OnInit {
 
   public contactForm: FormGroup;
   public wysiwyg = new wysiwyg();
+  public send = false;
+  public spinner = true;
 
   constructor(
     private readonly _fb: FormBuilder,
@@ -39,19 +41,22 @@ export class ContactComponent implements OnInit {
   }
 
   public submitForm(): void {
-    const message = JSON.stringify(this.contactForm.get('message').value);
-    console.log(message)
+    this.send = true;
+    this.spinner = false;
     let payload = {
-      ...this.contactForm.value,
-      message
+      ...this.contactForm.value
     };
 
     this._http.post<Response>('/api/mail', payload)
       .subscribe(resp => {
         if (resp.httpCode !== 200) {
-          alert(resp.errorReason);
+          this.send = false;
+          this.spinner = true;
+          console.log(resp);
         } else {
-          alert('Message Sent');
+          this.send = false;
+          this.spinner = true;
+          console.log('Message Sent');
           this.intialiseForm();
         }
       });

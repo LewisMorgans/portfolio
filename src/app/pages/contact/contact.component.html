@@ -21,7 +21,9 @@
                         rows="5" placeholder="Message"></textarea>
                 </div>
                 <button class="btn btn-info btn-block" type="button" (click)="submitForm()"
-                    [disabled]="contactForm.invalid">Send</button>
+                    [disabled]="contactForm.invalid">
+                    <span [hidden]="spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <span [hidden]="send">Send</span></button>
             </form>
         </div>
     </div>
