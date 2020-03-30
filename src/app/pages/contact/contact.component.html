@@ -17,12 +17,13 @@
                     <option value="I'd Like to connect">I'd Like to connect</option>
                 </select>
                 <div class="form-group">
-                    <textarea formControlName="message" class="form-control rounded-0" id="exampleFormControlTextarea2"
-                        rows="5" placeholder="Message"></textarea>
+                    <textarea formControlName="message" class="form-control" id="exampleFormControlTextarea2" rows="5"
+                        placeholder="Message"></textarea>
                 </div>
                 <button class="btn btn-info btn-block" type="button" (click)="submitForm()"
                     [disabled]="contactForm.invalid">
-                    <span [hidden]="spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <span [hidden]="spinner" class="spinner-border spinner-border-sm" role="status"
+                        aria-hidden="true"></span>
                     <span [hidden]="send">Send</span></button>
             </form>
         </div>

@@ -32,7 +32,7 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
     ReactiveFormsModule,
     HttpClientModule,
     ChartsModule,
-    MDBBootstrapModule.forRoot() ,
+    MDBBootstrapModule.forRoot(),
     AngularEditorModule,
     NgCircleProgressModule.forRoot({
       radius: 100,
@@ -43,7 +43,7 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
       animationDuration: 300
     })
   ],
-  schemas: [ NO_ERRORS_SCHEMA ],
+  schemas: [NO_ERRORS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

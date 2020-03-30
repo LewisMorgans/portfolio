@@ -45,3 +45,4 @@ testem.log
 .DS_Store
 Thumbs.db
 sendgrid.env
+node_modules
