@@ -4,6 +4,9 @@
   background: -webkit-linear-gradient(to right, #a43931, #1d4350);
   background: linear-gradient(to right, #a43931, #1d4350);
 }
+#toast:hover {
+  cursor: pointer;
+}
 
 #contactForm {
   padding: 5%;
