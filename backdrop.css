@@ -1,0 +1,56 @@
+.mediaViewInfo {
+	--web-view-name: backdrop;
+	--web-view-id: backdrop;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: backdrop;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#backdrop {
+	position: absolute;
+	width: 2560px;
+	height: 1440px;
+	background-color: rgba(172,73,84,1);
+	overflow: hidden;
+	--web-view-name: backdrop;
+	--web-view-id: backdrop;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+.Rectangle_3 {
+	position: absolute;
+	overflow: visible;
+	width: 471px;
+	height: 1440px;
+	left: 342px;
+	top: 0px;
+}
+#Mask_Group_1 {
+	position: absolute;
+	width: 663px;
+	height: 643px;
+	left: 246px;
+	top: 399px;
+	overflow: visible;
+}
+#Lewis_Morgans_Senior_Software_ {
+	position: absolute;
+	left: 380px;
+	top: 1084px;
+	overflow: visible;
+	width: 442px;
+	height: 206px;
+	text-align: left;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 45px;
+	color: rgba(245,61,124,1);
+}
