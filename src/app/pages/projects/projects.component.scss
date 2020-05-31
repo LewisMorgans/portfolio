@@ -5,6 +5,15 @@
   src: url("../../../assets/fonts/midnightsnack-bb.regular.ttf");
 }
 
+@font-face {
+  font-family: navItems;
+  src: url("../../../assets/fonts/BebasNeue-Regular.ttf");
+}
+
+.card-img-top {
+  max-width: 400px;
+}
+
 .container-fluid {
   background: #304352; /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #d7d2cc, #304352); /* Chrome 10-25, Safari 5.1-6 */
@@ -18,9 +27,9 @@
 }
 
 .title {
-  font-family: skillsFont;
+  font-family: navItems;
   letter-spacing: 25px;
-  color: #7a3c3a;
+  color: #F53D7C;
   cursor: context-menu;
   text-transform: uppercase;
   font-weight: 200;
@@ -31,10 +40,10 @@
 }
 
 .title2 {
-  font-family: skillsFont;
+  font-family: navItems;
   letter-spacing: 55px;
   font-size: clamp(35px, 3vw, 30px);
-  color: #7a3c3a;
+  color: #F53D7C;
   cursor: context-menu;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -43,22 +52,23 @@
   text-align: center;
 }
 
-
 .card {
-  border-color: #0ae1c2;
+  border-color: #F53D7C;
   .card-body {
-    background-color: #1a1a1d;
+    background-color: #323232;
     color: white;
   }
   .btn {
-    background-color: #0ae1c2;
+    background-color: #323232;
+    color: #F53D7C;
     transition: ease 0.2s all;
+    border: 1px solid #F53D7C
   }
 
   .btn:hover {
     transform: scale(1.2);
-    background-color: #767F85;
-    color: white;
+    background-color: #323232;
+    color: #F53D7C;
   }
 
   hr {

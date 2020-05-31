@@ -4,7 +4,7 @@ const sgMail = require('@sendgrid/mail');
 const bodyParser = require('body-parser');
 
 // MIDDLEWARE
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey('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');
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 

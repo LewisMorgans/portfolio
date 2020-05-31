@@ -1,15 +1,36 @@
-.nav-item {
-  margin-right: 20px;
+@font-face {
+  font-family: navItems;
+  src: url("../../../assets/fonts/BebasNeue-Regular.ttf");
 }
 
-.menuBtn:hover {
-  transform: scale(1.5);
-  overflow-y: hidden;
+.nav-item {
+  padding: 0px 5px 0px 5px;
+  h4 {
+    font-family: navItems;
+  };
+
+  h4:hover {
+    text-decoration: underline #F53D7C !important;
+  }
 }
+
+
 
 ::ng-deep .navCss nav {
-  background-color: #1A1A1D;
+  background: rgba(255, 255, 255, 0.089) !important; /* Give transparent white background to navbar */
+  /* 0.2 to give little whitish effect. */
+  /* Put 0 to get complete transperency */
+  z-index: 100;
+  backdrop-filter: blur(10px) saturate(125%); /* Blur the background */
+  /* 10px Gaussian Blur and saturate for fluent design */
+  -webkit-backdrop-filter: blur(10px) saturate(125%); /* Increases browser compability (safari ios and mac) */
   height: 20% !important;
+
+
 }
 
+#nevmenu {
+  min-width: 100vh;
+  z-index: 100;
+}
 

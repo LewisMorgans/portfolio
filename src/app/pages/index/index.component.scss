@@ -25,7 +25,7 @@
 #particles-js {
   font-family: "Montserrat";
   text-align: center;
-  background-color: #1a1a1d; // 252934
+  background-color: #1E1E2E; // 252934
   width: 100%;
   height: 110%;
   z-index: 10;
@@ -69,12 +69,12 @@
 
 .bounce {
   animation-name: bounce;
-  animation-timing-function: ease;
+  animation-timing-function: 0.1s linear;
 }
 
 .flyIn {
   animation-name: push;
-  animation-duration: 1.4s;
+  animation-duration: 1.7s;
 }
 
 @keyframes bounce {
@@ -82,7 +82,7 @@
     transform: translateY(0);
   }
   30% {
-    transform: translateY(-55px);
+    transform: translateY(-15px);
   }
   100% {
     transform: translateY(0);

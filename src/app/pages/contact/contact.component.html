@@ -3,7 +3,7 @@
     <div class="row" id="contactForm">
         <div class="col-md-6 mx-auto">
             <form [formGroup]="contactForm" class="text-center " action="#!">
-                <p class="h4 mb-4 title">Contact Us</p>
+                <p class="h4 mb-4 title">Contact Me</p>
                 <input formControlName="name" type="text" id="defaultContactFormName" class="form-control mb-4"
                     placeholder="Name">
                 <input formControlName="email" type="email" id="defaultContactFormEmail" class="form-control mb-4"
@@ -26,6 +26,24 @@
                         aria-hidden="true"></span>
                     <span [hidden]="send">Send</span></button>
             </form>
+        </div>
+    </div>
+    <div class="row social">
+        <div class="col-xs-3 ml-auto">
+            <a href="https://www.facebook.com/lewis.morgans" target="_blank" class="nav-link waves-effect menuBtn">
+                <img src="./assets/img/facebook.svg">
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="https://www.linkedin.com/in/lewismorgansengineer/" target="_blank"
+                class="nav-link waves-effect menuBtn">
+                <img src="./assets/img/linkedin.svg">
+            </a>
+        </div>
+        <div class="col-xs-3 mr-auto">
+            <a href="https://github.com/LewisMorgans" target="_blank" class="nav-link waves-effect menuBtn">
+                <img src="./assets/img/github.svg">
+            </a>
         </div>
     </div>
 </div>

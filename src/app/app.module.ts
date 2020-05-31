@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ChartsModule } from 'ng2-charts';
 import { AngularEditorModule } from '@kolkov/angular-editor';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,10 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
     AboutComponent,
     SkillsComponentComponent,
     ProjectsComponent,
-    ContactComponent,
+    ContactComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     FlexLayoutModule,
     FormsModule,
@@ -41,8 +44,10 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
       animationDuration: 300
-    })
+    }),
+    MatSnackBarModule,
   ],
+  exports: [MatSnackBarModule],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]

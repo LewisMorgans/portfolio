@@ -1,11 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@font-face {
+  font-family: navItems;
+  src: url("../../../assets/fonts/BebasNeue-Regular.ttf");
+}
 
 .container-fluid {
   background: -webkit-linear-gradient(to right, #a43931, #1d4350);
   background: linear-gradient(to right, #a43931, #1d4350);
 }
-#toast:hover {
-  cursor: pointer;
+
+.social {
+  padding-bottom: 15px;
+  img:hover {
+    filter: brightness(130%);
+  }
 }
 
 #contactForm {
@@ -16,14 +25,16 @@
   color: white;
 
   .btn {
-    background-color: #0ae1c2;
+    color: #F53D7C;
+    background-color: #1E1E2E;
+    border: none;
   }
 }
 
 .title {
-  font-family: skillsFont;
+  font-family: navItems;
   letter-spacing: 25px;
-  color: #0ae1c2;
+  color: #F53D7C;
   cursor: context-menu;
   text-transform: uppercase;
   text-align: center;

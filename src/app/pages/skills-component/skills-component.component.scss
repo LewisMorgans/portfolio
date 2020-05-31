@@ -5,6 +5,11 @@
   src: url("../../../assets/fonts/titleFont.otf");
 }
 
+@font-face {
+  font-family: navItems;
+  src: url("../../../assets/fonts/BebasNeue-Regular.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -26,14 +31,14 @@ img {
 }
 
 .skillsTitle {
-  font-family: skillsFont;
+  font-family: navItems;
   writing-mode: vertical-rl;
   display: flex;
   justify-content: center;
   align-items: center;
   text-orientation: upright;
   letter-spacing: 55px;
-  color: #0ae1c2;
+  color: #F53D7C;
   cursor: context-menu;
 
   h3 {
@@ -90,7 +95,7 @@ img {
   }
 
   .skillsTitle {
-    font-family: skillsFont;
+    font-family: navItems;
     writing-mode: horizontal-tb;
     h3 {
       font-size: 2em;

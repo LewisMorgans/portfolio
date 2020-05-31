@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { wysiwyg } from 'src/app/config/wysiwyg/wysiwyg.component';
+import { SnackBarComponent } from 'src/app/components/snackBar/snack-bar.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { SnackBarService } from 'src/app/services/snack-bar.service';
 
 type Response = {
   httpCode: number,
@@ -20,10 +23,13 @@ export class ContactComponent implements OnInit {
   public wysiwyg = new wysiwyg();
   public send = false;
   public spinner = true;
+  public snackBarRef;
 
   constructor(
     private readonly _fb: FormBuilder,
-    private readonly _http: HttpClient
+    private readonly _http: HttpClient,
+    private _snackBar: MatSnackBar,
+    private readonly _snackBarService: SnackBarService
   ) { }
 
   ngOnInit(): void {
@@ -37,7 +43,7 @@ export class ContactComponent implements OnInit {
       subject: ['', Validators.required],
       message: ['', Validators.required]
     });
-    this.contactForm.valid;
+    // this.contactForm.valid;
   }
 
   public submitForm(): void {
@@ -52,11 +58,11 @@ export class ContactComponent implements OnInit {
         if (resp.httpCode !== 200) {
           this.send = false;
           this.spinner = true;
-          console.log(resp);
+          this._snackBarService.openSnackBar('Message failed to send, please try again', 'X')
         } else {
           this.send = false;
           this.spinner = true;
-          console.log('Message Sent');
+          this._snackBarService.openSnackBar('Message Sent', 'X')
           this.intialiseForm();
         }
       });
