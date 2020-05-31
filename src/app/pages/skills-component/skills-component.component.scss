@@ -1,44 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
 
-@font-face {
-  font-family: skillsFont;
-  src: url("../../../assets/fonts/titleFont.otf");
-}
-
-@font-face {
-  font-family: navItems;
-  src: url("../../../assets/fonts/BebasNeue-Regular.ttf");
-}
-
 * {
   padding: 0;
   margin: 0;
 }
 
-.container-fluid {
-  background: #304352; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #d7d2cc, #304352); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #d7d2cc,
-    #304352
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-img {
-  display: block;
-  margin: auto;
-}
 
 .skillsTitle {
-  font-family: navItems;
+  font-family: titleFont;
   writing-mode: vertical-rl;
   display: flex;
   justify-content: center;
   align-items: center;
   text-orientation: upright;
   letter-spacing: 55px;
-  color: #F53D7C;
+  color: #ffffff;
   cursor: context-menu;
 
   h3 {
@@ -47,34 +23,21 @@ img {
 }
 
 .skillsContainer {
-  background: #16222a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #3a6073, #16222a); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #3a6073,
-    #16222a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  clip-path: polygon(51% 0, 100% 0, 100% 100%, 54% 80%, 22% 94%, 0 81%, 0 0);
-
+  background-image: url("../../../assets/img/skills-backdrop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  font-family: "Montserrat";
+  font-family: textFont;
   text-align: left;
   font-weight: 470;
   color: white;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 5% !important;
-  padding-bottom: 12%;
   margin: none !important;
 
-  .circle {
-    height: 100%;
-    width: 100%;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-  }
+
 }
 
 @media only screen and (max-width: 1541px) {

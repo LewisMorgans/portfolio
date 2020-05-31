@@ -1,11 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@font-face {
+  font-family: textFont;
+  src: url("./assets/fonts/MyriadPro-Light.otf");
+}
+@font-face {
+  font-family: titleFont;
+  src: url("./assets/fonts/BebasNeue-Regular.ttf");
+}
 
 html {
     scroll-behavior: smooth;
   }
   * {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   body {

@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-@font-face {
-  font-family: navItems;
-  src: url("../../../assets/fonts/BebasNeue-Regular.ttf");
-}
 
 .container-fluid {
   background: -webkit-linear-gradient(to right, #a43931, #1d4350);
@@ -19,7 +15,7 @@
 
 #contactForm {
   padding: 5%;
-  font-family: "Montserrat";
+  font-family: textFont;
   text-align: center;
   font-weight: 470;
   color: white;
@@ -32,7 +28,7 @@
 }
 
 .title {
-  font-family: navItems;
+  font-family: titleFont;
   letter-spacing: 25px;
   color: #F53D7C;
   cursor: context-menu;

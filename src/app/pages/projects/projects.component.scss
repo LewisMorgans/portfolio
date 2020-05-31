@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
 
-@font-face {
-  font-family: titleFont;
-  src: url("../../../assets/fonts/midnightsnack-bb.regular.ttf");
-}
-
-@font-face {
-  font-family: navItems;
-  src: url("../../../assets/fonts/BebasNeue-Regular.ttf");
-}
-
 .card-img-top {
   max-width: 400px;
 }
@@ -27,7 +17,7 @@
 }
 
 .title {
-  font-family: navItems;
+  font-family: titleFont;
   letter-spacing: 25px;
   color: #F53D7C;
   cursor: context-menu;
@@ -39,20 +29,27 @@
   text-align: center;
 }
 
-.title2 {
-  font-family: navItems;
-  letter-spacing: 55px;
-  font-size: clamp(35px, 3vw, 30px);
-  color: #F53D7C;
-  cursor: context-menu;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-left: 25px;
-  margin-right: auto;
-  text-align: center;
+.project {
+  background-color: #323232;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: textFont;
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+
+  .btn {
+    background-color: #323232;
+    color: #F53D7C;
+    transition: ease 0.2s all;
+    border: 1px solid #F53D7C
+  }
+
+  .btn:hover {
+    transform: scale(1.1);
+  }
 }
 
 .card {
+  font-family: textFont;
   border-color: #F53D7C;
   .card-body {
     background-color: #323232;

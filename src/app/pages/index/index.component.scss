@@ -29,37 +29,6 @@
   width: 100%;
   height: 110%;
   z-index: 10;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-
-  #title {
-    position: absolute;
-    left: 50%;
-    top: 43%;
-    transform: translateX(-50%) translateY(-50%);
-
-    h1 {
-      color: #08fdd8;
-      font-weight: 200;
-      font-size: 35px;
-      padding: 0;
-      margin: 0;
-      line-height: 1;
-      letter-spacing: 7.5px;
-      text-transform: uppercase;
-      word-wrap: break-word;
-    }
-
-    h3 {
-      font-weight: 200;
-      font-size: 20px;
-      padding: 0;
-      margin: 0;
-      line-height: 1;
-      color: #ffffff;
-      letter-spacing: 7.5px;
-      text-transform: uppercase;
-    }
-  }
 }
 
 .arrow {
@@ -72,10 +41,6 @@
   animation-timing-function: 0.1s linear;
 }
 
-.flyIn {
-  animation-name: push;
-  animation-duration: 1.7s;
-}
 
 @keyframes bounce {
   0% {

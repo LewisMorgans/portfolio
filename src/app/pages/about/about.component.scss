@@ -1,18 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
-
-@font-face {
-  font-family: navItems;
-  src: url("../../../assets/fonts/BebasNeue-Regular.ttf");
-}
-
 .container-fluid {
-  background: #16222a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #3a6073, #16222a); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #3a6073,
-    #16222a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
   z-index: -10;
 }
@@ -21,7 +8,7 @@
   margin-top: 55px;
 }
 .title {
-  font-family: navItems;
+  font-family: titleFont;
   letter-spacing: 25px;
   font-size: clamp(45px, 3vw, 100px);
   color: #0ae1c2;
@@ -32,13 +19,12 @@
 
 .aboutContainer {
   background: linear-gradient(90deg, rgba(57, 13, 12, 1) 36%, rgba(69, 29, 11, 1) 80%);
-  clip-path: polygon(100% 100%, 0 90%, 0 0, 100% 0);
   padding-bottom: 15%;
   padding-top: 5%;
 }
 
 #about-section {
-  font-family: "Montserrat";
+  font-family: textFont;
   text-align: left;
   font-weight: 500;
   color: white;
