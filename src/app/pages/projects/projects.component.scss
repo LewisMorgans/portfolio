@@ -5,13 +5,7 @@
 }
 
 .container-fluid {
-  background: #304352; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #d7d2cc, #304352); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #d7d2cc,
-    #304352
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #25274D;
   padding: 5%;
   padding-top: 0px;
 }
@@ -19,31 +13,29 @@
 .title {
   font-family: titleFont;
   letter-spacing: 25px;
-  color: #F53D7C;
-  cursor: context-menu;
-  text-transform: uppercase;
-  font-weight: 200;
+  color: #2D9CCA;
+  
   font-size: 59px;
   line-height: 1;
-  filter: brightness(0.9);
   text-align: center;
 }
 
 .project {
-  background-color: #323232;
+  background-color: #474866;
   border-radius: 5px;
-  color: #ffffff;
+  color: #FFF;
   font-family: textFont;
   box-shadow:0 0 20px rgba(0,0,0,0.8);
   margin-bottom: 25px;
   padding: 25px;
 
   .btn {
-    background-color: #323232;
-    color: #F53D7C;
+    background-color: #2D9CCA;
+    color: #FFF;
     transition: ease 0.2s all;
-    border: 1px solid #F53D7C;
-    margin-bottom: 25px;
+    border: 1px solid #2D9CCA;
+    border-radius: 10px;
+    // margin-bottom: 25px;
   }
 
   .btn:hover {

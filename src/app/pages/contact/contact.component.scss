@@ -2,8 +2,7 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 .container-fluid {
-  background: -webkit-linear-gradient(to right, #a43931, #1d4350);
-  background: linear-gradient(to right, #a43931, #1d4350);
+  background-color: #222629;
 }
 
 .social {
@@ -14,23 +13,46 @@
 }
 
 #contactForm {
+
   padding: 5%;
   font-family: textFont;
-  text-align: center;
+  text-align: left;
   font-weight: 470;
-  color: white;
+  color: #87C232;
+  
+
+  input {
+    background-color: #474A4F;
+    border-color: #474A4F;
+    color: #FFF
+  }
+
+  select {
+    background-color: #474A4F;
+    border-color: #474A4F;
+    color: #FFF
+  }
+
+  textarea {
+    background-color: #474A4F;
+    border-color: #474A4F;
+    color: #FFF
+  }
 
   .btn {
-    color: #F53D7C;
-    background-color: #1E1E2E;
+    font-family: textFont;
+    color: #87C232;
+    background-color: #474A4F;
     border: none;
   }
+
+
 }
 
 .title {
   font-family: titleFont;
   letter-spacing: 25px;
-  color: #F53D7C;
+  color: #87C232;
   cursor: context-menu;
   text-transform: uppercase;
   text-align: center;

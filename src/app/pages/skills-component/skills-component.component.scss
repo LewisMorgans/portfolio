@@ -8,18 +8,11 @@
 
 .skillsTitle {
   font-family: titleFont;
-  writing-mode: vertical-rl;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-orientation: upright;
-  letter-spacing: 55px;
-  color: #ffffff;
-  cursor: context-menu;
+  letter-spacing: 35px;
+  color: #D2E9E3;
+  font-size: 59px;
+  text-align: center;
 
-  h3 {
-    font-size: 5em;
-  }
 }
 
 .skillsContainer {
@@ -32,17 +25,22 @@
   text-align: left;
   font-weight: 470;
   color: white;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 5% !important;
+ padding: 3%;
   margin: none !important;
+
+  .graph {
+    margin-top: 5%
+  }
 
 
 }
 
 @media only screen and (max-width: 1541px) {
   .skillsContainer {
-    padding-bottom: 25% !important;
+    .graph {
+      margin-top: 5%
+    }
+  
   }
 }
 
