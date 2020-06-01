@@ -2,7 +2,9 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 .container-fluid {
-  background-color: #222629;
+  background-image: url("../../../assets/img/contact-backdrop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .social {

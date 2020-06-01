@@ -52,7 +52,9 @@
 
 @media only screen and (max-width: 513px) {
   .skillsContainer {
-    clip-path: none;
+    background-image: url("../../../assets/img/skills-backdrop-nobg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .skillsTitle {
