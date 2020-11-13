@@ -2,55 +2,88 @@
 
 .container-fluid {
   background: rgb(57, 13, 12);
-  background: linear-gradient(90deg, rgba(57, 13, 12, 1) 36%, rgba(69, 29, 11, 1) 80%);
+  background: linear-gradient(
+    90deg,
+    rgba(57, 13, 12, 1) 36%,
+    rgba(69, 29, 11, 1) 80%
+  );
   z-index: -10;
 }
 
-#arrow-container {
+.center {
   position: absolute;
-  left: 50%;
-  top: 75%;
+  left: 60%;
+  top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  cursor: pointer;
 }
 
 .logo {
-  position: absolute;
-  height: 17%;
-  left: 50%;
-  top: 40%;
-  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+.typewriter {
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-family: "Montserrat";
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px 20px;
+  z-index: 3;
+  p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .lastName {
+    color: #66b95c;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+  }
+}
+
+#arrow-container {
+  cursor: pointer;
+  transform: rotate(90deg);
 }
 
 #particles-js {
   font-family: "Montserrat";
   text-align: center;
-  background-color: #1E1E2E; // 252934
+  background-color: #0d0e13; // 252934
   width: 100%;
   height: 100%;
   z-index: 10;
 }
 
-.arrow {
+// .arrow {
+//   animation-duration: 1.6s;
+//   animation-iteration-count: infinite;
+// }
+
+// .bounce {
+//   animation-name: bounce;
+//   animation-timing-function: 0.1s linear;
+// }
+.arrowBounce {
+  animation-name: bounce;
+  animation-timing-function: 0.1s;
   animation-duration: 1.6s;
   animation-iteration-count: infinite;
 }
 
-.bounce {
-  animation-name: bounce;
-  animation-timing-function: 0.1s linear;
-}
-
-
 @keyframes bounce {
   0% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   30% {
-    transform: translateY(-15px);
+    transform: translateX(-15px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -68,9 +101,23 @@
 @media only screen and (max-width: 513px) {
   .arrow {
     display: none;
-  };
+  }
 
   #particles-js {
     height: 102vh;
+  }
+
+  .logo {
+    width: 70% !important
+  }
+
+}
+
+@media only screen and (max-width: 1920px) {
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
 }

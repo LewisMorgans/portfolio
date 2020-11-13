@@ -4,7 +4,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { IndexComponent } from './pages/index/index.component';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AboutComponent } from './pages/about/about.component';
 import { SkillsComponentComponent } from './pages/skills-component/skills-component.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
@@ -12,7 +11,6 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { ChartsModule } from 'ng2-charts';
 import { AngularEditorModule } from '@kolkov/angular-editor';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -34,8 +32,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ChartsModule,
-    MDBBootstrapModule.forRoot(),
     AngularEditorModule,
     NgCircleProgressModule.forRoot({
       radius: 100,

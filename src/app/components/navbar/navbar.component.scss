@@ -1,37 +1,104 @@
-@font-face {
-  font-family: navItems;
-  src: url("../../../assets/fonts/BebasNeue-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
-.nav-item {
-  padding: 0px 5px 0px 5px;
-  h4 {
-    font-family: navItems;
-    text-align: center;
-  };
+.nav-container {
+  padding: 35px;
+  width: 450px;
+  background-color: #111;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Mulish";
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  box-sizing: border-box;
 
-  h4:hover {
-    text-decoration: underline #66FCF1 !important;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .logo-container {
+    height: 30%;
+  }
+
+  .logo {
+    height: 40%;
+    margin: auto;
+    display: block;
+  }
+
+  .navigation-menu {
+    position: relative;
+    top: -100px;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: none;
+
+    ul {
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+
+      li {
+        color: #fff;
+        text-transform: capitalize;
+        display: block;
+        position: relative;
+        padding: 10px 0px;
+        border-bottom: 1px solid rgb(59, 59, 59);
+        transition: all ease-in 0.2s;
+      }
+
+      li::after {
+        border-bottom: none;
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #66b95c;
+        transition: width 0.3s;
+      }
+
+      li:hover::after {
+        width: 100%;
+        transition: width 0.3s;
+      }
+
+      li:hover {
+        cursor: pointer;
+        color: #66b95c;
+        transition: all ease-in 0.2s;
+      }
+    }
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .navbar {
+    display: none !important;
   }
 }
 
-
-
-::ng-deep .navCss nav {
-  background: rgba(255, 255, 255, 0.089) !important; /* Give transparent white background to navbar */
-  /* 0.2 to give little whitish effect. */
-  /* Put 0 to get complete transperency */
-  z-index: 100;
-  backdrop-filter: blur(10px) saturate(125%); /* Blur the background */
-  /* 10px Gaussian Blur and saturate for fluent design */
-  -webkit-backdrop-filter: blur(10px) saturate(125%); /* Increases browser compability (safari ios and mac) */
-  height: 20% !important;
-
-
+@media only screen and (max-width: 1920px) {
+  .nav-container {
+    display: none;
+  }
+  .bootstrap-container {
+    display: block;
+  }
 }
-
-#nevmenu {
-  min-width: 100vh;
-  z-index: 100;
-}
-

@@ -1,69 +1,51 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
+  font-family: "Mulish";
 }
 
+.container-fluid {
+  background-color: #111111;
 
-.skillsTitle {
-  font-family: titleFont;
-  letter-spacing: 35px;
-  color: #C8CFCD;
-  font-size: 59px;
-  text-align: center;
-
-}
-
-.skillsContainer {
-  background-image: url("../../../assets/img/skills-backdrop.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  font-family: textFont;
-  text-align: left;
-  font-weight: 470;
-  color: white;
- padding: 3%;
-  margin: none !important;
-
-  .graph {
-    margin-top: 5%
+  .card {
+    background: transparent;
+    // padding: 60px 40px 53px 40px;
+    border-radius: 5px;
+    border: solid rgba(187, 187, 187, 0.377) 0.3px !important;
+    transition: ease-in 0.2s;
+    margin: 20px 0;
   }
 
-
-}
-
-@media only screen and (max-width: 1541px) {
-  .skillsContainer {
-    .graph {
-      margin-top: 5%
-    }
-  
-  }
-}
-
-@media only screen and (max-width: 756px) {
-  .skillsContainer {
-    padding-bottom: 45% !important;
-  }
-}
-
-@media only screen and (max-width: 513px) {
-  .skillsContainer {
-    background-image: url("../../../assets/img/skills-backdrop-nobg.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  .card:hover {
+    border-radius: 5px;
+    border: solid #66b95c !important;
+    transition: ease-in 0.2s;
   }
 
-  .skillsTitle {
-    font-family: navItems;
-    writing-mode: horizontal-tb;
-    h3 {
-      font-size: 2em;
-      letter-spacing: 20px;
-      margin: 25px;
-    }
+  .title {
+    padding: 150px 0px;
+    color: #66b95c;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+    display: block;
+    margin: auto;
+  }
+
+  .subHeader {
+    padding: 10px 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left !important;
+  }
+
+  .text {
+    color: #bbb;
+    font-family: "Mulish";
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.8px;
+    font-weight: 400;
   }
 }

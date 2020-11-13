@@ -1,48 +1,65 @@
 <div class="container-fluid">
-    <section id="#contact"></section>
-    <div class="row" id="contactForm">
-        <div class="col-md-6 mx-auto">
-            <form [formGroup]="contactForm"  action="#!">
-                <p class="h4 mb-4 title">Contact Me</p>
-                <input formControlName="name" type="text" id="defaultContactFormName" class="form-control mb-4"
-                    placeholder="Name">
-                <input formControlName="email" type="email" id="defaultContactFormEmail" class="form-control mb-4"
-                    placeholder="E-mail">
-                <select formControlName="subject" class="browser-default custom-select mb-4">
-                    <option value="" disabled>Choose option</option>
-                    <option value="Temporary Contract" selected>Temporary Contract</option>
-                    <option value="Permanant Contract">Permanant Contract</option>
-                    <option value="General Query">General Query</option>
-                    <option value="I'd Like to connect">I'd Like to connect</option>
-                </select>
-                <div class="form-group">
-                    <textarea formControlName="message" class="form-control" id="exampleFormControlTextarea2" rows="5"
-                        placeholder="Message"></textarea>
-                </div>
-                <button class="btn btn-info btn-block" type="button" (click)="submitForm()"
-                    [disabled]="contactForm.invalid">
-                    <span [hidden]="spinner" class="spinner-border spinner-border-sm" role="status"
-                        aria-hidden="true"></span>
-                    <span [hidden]="send" style="font-family: titleFont;"><h5>Send</h5></span></button>
-            </form>
-        </div>
+  <section id="#contact"></section>
+  <div class="row">
+    <div class="col offset-0 col-xl-2 offset-xl-3">
+      <p class="title">Contact</p>
     </div>
-    <div class="row social">
-        <div class="col-xs-3 ml-auto">
-            <a href="https://www.facebook.com/lewis.morgans" target="_blank" class="nav-link waves-effect menuBtn">
-                <img src="./assets/img/facebook.svg">
-            </a>
+  </div>
+  <div class="row" id="contactForm">
+    <div class="col offset-0 col-xl-6 offset-xl-4">
+      <form [formGroup]="contactForm" action="#!">
+        <input
+          formControlName="name"
+          type="text"
+          id="defaultContactFormName"
+          class="form-control mb-4"
+          placeholder="Name"
+        />
+        <input
+          formControlName="email"
+          type="email"
+          id="defaultContactFormEmail"
+          class="form-control mb-4"
+          placeholder="E-mail"
+        />
+        <select
+          formControlName="subject"
+          class="browser-default custom-select mb-4"
+        >
+          <option value="" disabled>Choose option</option>
+          <option value="Temporary Contract" selected>
+            Temporary Contract
+          </option>
+          <option value="Permanant Contract">Permanant Contract</option>
+          <option value="General Query">General Query</option>
+          <option value="I'd Like to connect">I'd Like to connect</option>
+        </select>
+        <div class="form-group">
+          <textarea
+            formControlName="message"
+            class="form-control"
+            id="exampleFormControlTextarea2"
+            rows="5"
+            placeholder="Message"
+          ></textarea>
         </div>
-        <div class="col-xs-3">
-            <a href="https://www.linkedin.com/in/lewismorgansengineer/" target="_blank"
-                class="nav-link waves-effect menuBtn">
-                <img src="./assets/img/linkedin.svg">
-            </a>
-        </div>
-        <div class="col-xs-3 mr-auto">
-            <a href="https://github.com/LewisMorgans" target="_blank" class="nav-link waves-effect menuBtn">
-                <img src="./assets/img/github.svg">
-            </a>
-        </div>
+        <button
+          class="btn btn-info btn-block"
+          type="button"
+          (click)="submitForm()"
+          [disabled]="contactForm.invalid"
+        >
+          <span
+            [hidden]="spinner"
+            class="spinner-border spinner-border-sm"
+            role="status"
+            aria-hidden="true"
+          ></span>
+          <span [hidden]="send"
+            ><p>Send</p></span
+          >
+        </button>
+      </form>
     </div>
+  </div>
 </div>

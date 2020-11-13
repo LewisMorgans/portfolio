@@ -1,10 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
 .container-fluid {
-  background-image: url("../../../assets/img/about-backdrop.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #000000;
 
   .profilePic {
-    background-color: #C5C6C8;
     img {
       display: block;
       margin: auto;
@@ -12,31 +11,52 @@
       left: 10%;
       width: 300px;
     }
-
-    h5 {
-      padding: 5%;
-      text-align: left;
-      font-family: titleFont;
-      color: #46A29F;
-    }
   }
 
-  .text-body {
-    h1 {
-      padding-top: 5%;
-      text-align: center;
-      font-family: titleFont;
-      font-size: 59px;
-      line-height: 1;
-      color: #66FCF1;
-    }
+  .icon {
+    width: 30% !important;
+  }
 
-    p {
-      font-family: textFont;
-      text-align: left;
-      font-weight: 500;
-      color: white;
-      padding-bottom: 5%;
-    }
+  .highlight {
+    color: #66b95c;
+  }
+
+  .title {
+    padding: 20px;
+    color: #66b95c;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+    display: block;
+    margin: auto;
+  }
+
+  p {
+    font-family: "Mulish";
+    font-size: 22px;
+    line-height: 2;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    color: #bbb;
+    padding: 80px 0;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: row;
+    background-color: #111111;
+    border: none;
+    color: #66b95c;
+    transition: all ease-in 0.2s;
+    display: block;
+    margin: 50px auto;
+  }
+
+  .btn:hover {
+    background-color: #111111;
+    color: #66b95c;
+    cursor: pointer;
+    border: 0.5px solid #66b95c !important;
+    transition: all ease-in 0.2s;
   }
 }

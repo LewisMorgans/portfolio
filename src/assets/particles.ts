@@ -8,13 +8,13 @@ export const particlesConfig = {
       }
     },
     color: {
-      value: "#ffffff" // #ffffff
+      value: "#66b95c" // #ffffff
     },
     shape: {
       type: "circle",
       stroke: {
         width: 0,
-        color: "#000000"
+        color: "#66b95c"
       },
       polygon: {
         nb_sides: 5
@@ -107,4 +107,4 @@ export const particlesConfig = {
     }
   },
   retina_detect: true
-}
+};

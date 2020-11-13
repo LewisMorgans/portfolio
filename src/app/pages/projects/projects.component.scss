@@ -1,86 +1,51 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
-.card-img-top {
-  max-width: 400px;
+* {
+  font-family: "Mulish";
 }
 
 .container-fluid {
-  background-image: url("../../../assets/img/work-backdrop.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 5%;
-  padding-top: 0px;
-}
+  background-color: #000000;
 
-.title {
-  font-family: titleFont;
-  letter-spacing: 25px;
-  color: #2D9CCA;
-  
-  font-size: 59px;
-  line-height: 1;
-  text-align: center;
-}
-
-.project {
-  background-color: #474866;
-  border-radius: 5px;
-  color: #FFF;
-  font-family: textFont;
-  box-shadow:0 0 20px rgba(0,0,0,0.8);
-  margin-bottom: 25px;
-  padding: 25px;
-
-  .btn {
-    background-color: #2D9CCA;
-    color: #FFF;
-    transition: ease 0.2s all;
-    border: 1px solid #2D9CCA;
-    border-radius: 10px;
-    // margin-bottom: 25px;
+  .card {
+    background: transparent;
+    // padding: 60px 40px 53px 40px;
+    border-radius: 5px;
+    border: solid rgba(187, 187, 187, 0.377) 0.3px !important;
+    transition: ease-in 0.2s;
+    margin: 20px 0;
   }
 
-  .btn:hover {
-    transform: scale(1.1);
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-  }
-}
-
-.card {
-  font-family: textFont;
-  border-color: #F53D7C;
-  .card-body {
-    background-color: #323232;
-    color: white;
-  }
-  .btn {
-    background-color: #323232;
-    color: #F53D7C;
-    transition: ease 0.2s all;
-    border: 1px solid #F53D7C
+  .card:hover {
+    border-radius: 5px;
+    border: solid #66b95c !important;
+    transition: ease-in 0.2s;
   }
 
-  .btn:hover {
-    transform: scale(1.2);
-    background-color: #323232;
-    color: #F53D7C;
-  }
-
-  hr {
-    background-color: #0ae1c2;
-  }
-}
-
-@media only screen and (max-width: 513px) {
   .title {
-    letter-spacing: 0px;
-    font-size: 52px;
+    padding: 150px 0px;
+    color: #66b95c;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+    display: block;
+    margin: auto;
   }
 
-  .title2 {
-    letter-spacing: 7px;
-    font-size: 35px;
-    margin-top: 25px;
-    margin-left: 18px;
+  .subHeader {
+    padding: 10px 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left !important;
+  }
+
+  .text {
+    color: #bbb;
+    font-family: "Mulish";
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.8px;
+    font-weight: 400;
   }
 }
