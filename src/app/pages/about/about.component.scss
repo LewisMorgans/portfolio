@@ -3,6 +3,10 @@
 .container-fluid {
   background-color: #000000;
 
+  button {
+
+  }
+
   .profilePic {
     img {
       display: block;
@@ -47,14 +51,18 @@
   }
 
   .btn {
-    display: flex;
-    flex-direction: row;
     background-color: #111111;
     border: none;
     color: #66b95c;
     transition: all ease-in 0.2s;
-    display: block;
-    margin: 50px auto;
+    display: inline-block !important;
+    margin: 50px 20px !important;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .btn:hover {

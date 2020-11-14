@@ -15,6 +15,7 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MobileNavbarComponent } from './components/mobile-navbar/mobile-navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { MobileNavbarComponent } from './components/mobile-navbar/mobile-navbar.
       animationDuration: 300
     }),
     MatSnackBarModule,
+    FontAwesomeModule
   ],
   exports: [MatSnackBarModule],
   schemas: [NO_ERRORS_SCHEMA],
