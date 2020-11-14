@@ -14,6 +14,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { AngularEditorModule } from '@kolkov/angular-editor';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MobileNavbarComponent } from './components/mobile-navbar/mobile-navbar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutComponent,
     SkillsComponentComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    MobileNavbarComponent
   ],
   imports: [
     BrowserAnimationsModule,

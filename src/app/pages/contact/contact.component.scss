@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 .container-fluid {
   background-color: #111111;
@@ -13,40 +13,36 @@
 }
 
 #contactForm {
-
   padding: 5%;
   font-family: "Mulish";
   text-align: left;
   font-weight: 470;
   color: #66b95c;
-  
 
   input {
-    background-color: #474A4F;
-    border-color: #474A4F;
-    color: #FFF
+    background-color: #474a4f;
+    border-color: #474a4f;
+    color: #fff;
   }
 
   select {
-    background-color: #474A4F;
-    border-color: #474A4F;
-    color: #FFF
+    background-color: #474a4f;
+    border-color: #474a4f;
+    color: #fff;
   }
 
   textarea {
-    background-color: #474A4F;
-    border-color: #474A4F;
-    color: #FFF
+    background-color: #474a4f;
+    border-color: #474a4f;
+    color: #fff;
   }
 
   .btn {
     font-family: "Mulish";
     color: #66b95c;
-    background-color: #474A4F;
+    background-color: #474a4f;
     border: none;
   }
-
-
 }
 
 .title {
