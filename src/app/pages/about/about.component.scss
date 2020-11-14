@@ -3,19 +3,33 @@
 .container-fluid {
   background-color: #000000;
 
-  button {
-
+  .img-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 13%;
+    margin-top: 100px;
+    left: 10%;
   }
 
-  .profilePic {
-    img {
-      display: block;
-      margin: auto;
-      margin-top: 65px;
-      left: 10%;
-      width: 300px;
-    }
+  .logo {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+    width: auto;
+    height: 100%;
+    // margin-left: -100px;
   }
+
+  // .profilePic {
+  //   img {
+  //     display: block;
+  //     margin: auto;
+  //     margin-top: 65px;
+  //     left: 10%;
+  //     width: 300px;
+  //   }
+  // }
 
   .icon {
     width: 30% !important;
@@ -71,5 +85,16 @@
     cursor: pointer;
     border: 0.5px solid #66b95c !important;
     transition: all ease-in 0.2s;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .img-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 300px !important;
+    height: 300px !important;
+    overflow: hidden;
+    border-radius: 50%;
   }
 }
