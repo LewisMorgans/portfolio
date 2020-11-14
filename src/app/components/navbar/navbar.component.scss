@@ -89,8 +89,11 @@
     justify-content: space-evenly;
   }
 
-  .navbar {
-    display: none !important;
+  .mobile-nav-container {
+    display: none;
+    border: 1px solid red;
+    .col-md-12 {
+    }
   }
 }
 
@@ -98,7 +101,9 @@
   .nav-container {
     display: none;
   }
-  .bootstrap-container {
-    display: block;
-  }
+  // .mobile-nav-container {
+  //   * {
+  //     display: block;
+  //   }
+  // }
 }
