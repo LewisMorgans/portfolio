@@ -20,17 +20,16 @@
 .img-wrapper {
   display: inline-block;
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
-  border-radius: 13%;
+  border-radius: 50%;
 }
 
 .logo {
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
-  width: auto;
-  height: 100%;
-  // margin-left: -100px;
+  width: 100%;
+  border-radius: 50%;
 }
 
 .typewriter {
@@ -70,15 +69,6 @@
   z-index: 10;
 }
 
-// .arrow {
-//   animation-duration: 1.6s;
-//   animation-iteration-count: infinite;
-// }
-
-// .bounce {
-//   animation-name: bounce;
-//   animation-timing-function: 0.1s linear;
-// }
 .arrowBounce {
   animation-name: bounce;
   animation-timing-function: 0.1s;
@@ -133,12 +123,12 @@
 }
 
 @media only screen and (max-width: 575px) {
-  .img-wrapper {
-    display: inline-block;
-    position: relative;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 50%;
-  }
+  // .img-wrapper {
+  //   display: inline-block;
+  //   position: relative;
+  //   width: 300px;
+  //   height: 300px;
+  //   overflow: hidden;
+  //   border-radius: 50%;
+  // }
 }
