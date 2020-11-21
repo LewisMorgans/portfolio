@@ -4,7 +4,7 @@ const sgMail = require('@sendgrid/mail');
 const bodyParser = require('body-parser');
 
 // MIDDLEWARE
-sgMail.setApiKey('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');
+sgMail.setApiKey('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');
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 
@@ -14,7 +14,7 @@ router.post('/mail', (req, res) => {
     console.log(req.body)
 
     const msg = {
-        to: 'lewis.morgans@weareswift.uk',
+        to: 'lmorgans90@gmail.com',
         from: req.body.email,
         subject: req.body.subject,
         text: req.body.message
