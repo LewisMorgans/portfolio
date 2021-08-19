@@ -8,6 +8,6 @@ COPY . /app
 RUN npm run build --prod
 # Stage 2
 FROM nginx:1.17.1-alpine
-COPY --from=build-step /app/dist/swift-media /usr/share/nginx/html
+COPY --from=build-step /app/dist/portfolio /usr/share/nginx/html
 #Default nginx port to listen on : eg- 4200:80
 EXPOSE 80
