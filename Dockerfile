@@ -1,13 +1,32 @@
-# Stage 1
-FROM node:10-alpine as build-step
-RUN mkdir -p /app
-WORKDIR /app
-COPY package.json /app
+# FROM node:14-alpine
+
+# WORKDIR /usr/src/app
+
+# COPY . /usr/src/app
+
+# COPY package*.json ./
+
+# RUN npm install
+# RUN npm build --prod
+# COPY . .
+
+# EXPOSE 443
+# CMD [ "node", "server.js" ]
+
+
+
+FROM node:14-alpine
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
 RUN npm install
-COPY . /app
-RUN npm run build --prod
-# Stage 2
-FROM nginx:1.17.1-alpine
-COPY --from=build-step /app/dist/portfolio /usr/share/nginx/html
-#Default nginx port to listen on : eg- 4200:80
-EXPOSE 80
+
+RUN npm build --prod
+
+COPY . .
+
+EXPOSE 443
+
+CMD [ "node", "server.js" ]

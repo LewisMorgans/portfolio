@@ -1,9 +1,9 @@
 {
-  "name": "portfolio",
-  "version": "0.0.0",
+  "name": "swift-media-client",
+  "version": "0.0.5",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build --prod --aot=false --build-optimizer=false",
     "postinstall": "ng build --prod --aot=false --build-optimizer=false"
   },
@@ -68,5 +68,17 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.7.5"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LewisMorgans/portfolio.git"
+  },
+  "author": "Lewis Morgans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LewisMorgans/portfolio/issues"
+  },
+  "homepage": "https://github.com/LewisMorgans/portfolio#readme"
 }

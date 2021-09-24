@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "aot": true,
-            "outputPath": "dist/portfolio",
+            "outputPath": "dist/swift-media-client",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,7 +72,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "portfolio:build:production"
+              "browserTarget": "portfolio:build:production",
+              "proxyConfig": "src/proxy.conf.json"
             }
           }
         },

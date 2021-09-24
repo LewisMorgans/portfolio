@@ -53,7 +53,7 @@ export class ContactComponent implements OnInit {
       ...this.contactForm.value
     };
 
-    this._http.post<Response>('/api/mail', payload)
+    this._http.post<Response>('/api/mail', payload) //http://dixienormus.local/8080/api/mail
       .subscribe(resp => {
         if (resp.httpCode !== 200) {
           this.send = false;

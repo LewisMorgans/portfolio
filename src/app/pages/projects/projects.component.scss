@@ -1,46 +1,163 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
-
-* {
-  font-family: "Mulish";
+body{
+  padding:0;
+  margin:0;
+  font-family: "Mulish"
 }
-
-.container-fluid {
-  background-color: #000000;
-
-  .card {
-    background: transparent;
-    // padding: 60px 40px 53px 40px;
-    border-radius: 5px;
-    border: solid rgba(187, 187, 187, 0.377) 0.3px !important;
-    transition: ease-in 0.2s;
-    margin: 20px 0;
+h1{
+  font-size:60px;
+  text-align:center;
+}
+p {
+  font-family: "Mulish";
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  color: #bbb;
+  padding: 80px 0;
+}
+.title {
+  padding: 20px;
+  color: #66b95c;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 700;
+  display: block;
+  margin: auto;
+}
+.timeline{
+  position:relative;
+  margin:50px auto;
+  padding:40px 0;
+  width:1000px;
+  box-sizing:border-box;
+}
+.timeline:before{
+  content:'';
+  position:absolute;
+  left:50%;
+  width:2px;
+  height:100%;
+  background:#66b95c;
+}
+.timeline ul{
+  padding:0;
+  margin:0;
+}
+.timeline ul li{
+  list-style:none;
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+  box-sizing:border-box;
+}
+.timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+.timeline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+.content{
+  padding-bottom:20px;
+}
+.timeline ul li:nth-child(odd):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+  background:#66b95c;
+  border-radius:50%;
+  box-shadow:0 0 0 3px #66b95c;
+}
+.timeline ul li:nth-child(even):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+  background:#66b95c;
+  border-radius:50%;
+  box-shadow:0 0 0 3px #66b95c;
+}
+.timeline ul li h3{
+  padding:0;
+  margin:0;
+  color:#66b95c;
+  font-weight:600;
+}
+.timeline ul li p{
+  margin:10px 0 0;
+  padding:0;
+}
+.timeline ul li .time h4{
+  padding:0;
+  margin:10px 0 0;
+  color:#66b95c;
+  font-weight:600;
+}
+.timeline ul li:nth-child(odd) .time
+{
+  position:absolute;
+  top:12px;
+  right:-165px;
+  margin:0;
+  color:#bbb;
+}
+.timeline ul li:nth-child(even) .time
+{
+  position:absolute;
+  top:12px;
+  left:-165px;
+  margin:0;
+  color:#bbb;
+}
+@media(max-width:1000px)
+{
+  .timeline{
+    width:100%;
   }
-
-  .title {
-    padding: 150px 0px;
-    color: #66b95c;
-    text-transform: uppercase;
-    font-size: 45px;
-    font-weight: 700;
-    display: block;
-    margin: auto;
-    word-wrap: break-word;
+}
+@media(max-width:767px){
+  .timeline{
+    width:100%;
+    padding-bottom:0;
   }
-
-  .subHeader {
-    padding: 10px 0;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 700;
-    text-align: left !important;
+  h1{
+    font-size:40px;
+    text-align:center;
   }
-
-  .text {
-    color: #bbb;
-    font-family: "Mulish";
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 0.8px;
-    font-weight: 400;
+  .timeline:before{
+    left:20px;
+    height:100%;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even)
+  {
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+    padding-bottom:50px;
+  }
+  .timeline ul li:nth-child(odd):before,
+  .timeline ul li:nth-child(even):before
+  {
+    top:-18px;
+    left:16px;
+  }
+  .timeline ul li:nth-child(odd) .time,
+  .timeline ul li:nth-child(even) .time{
+    top:-30px;
+    left:50px;
+    right:inherit;
   }
 }

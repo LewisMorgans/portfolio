@@ -1,21 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
-
 * {
   font-family: "Mulish";
 }
 
 .container-fluid {
   background-color: #111111;
-
-  .card {
-    background: transparent;
-    // padding: 60px 40px 53px 40px;
-    border-radius: 5px;
-    border: solid rgba(187, 187, 187, 0.377) 0.3px !important;
-    transition: ease-in 0.2s;
-    margin: 20px 0;
-  }
-
+}
   .title {
     padding: 150px 0px;
     color: #66b95c;
@@ -26,20 +15,131 @@
     margin: auto;
   }
 
-  .subHeader {
-    padding: 10px 0;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 700;
-    text-align: left !important;
-  }
 
-  .text {
-    color: #bbb;
-    font-family: "Mulish";
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 0.8px;
-    font-weight: 400;
+  @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+
+.skill-bars{
+  padding: 25px 30px;
+  width: 100%;
+  background: #111111;
+  border-radius: 10px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  color: #bbb;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
   }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #bbb;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #66b95c;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+  width: 100%;
+}
+.bar .progress-line.css span{
+  width: 100%;
+}
+.bar .progress-line.jquery span{
+  width: 100%;
+}
+.bar .progress-line.python span{
+  width: 95%;
+}
+.bar .progress-line.mysql span{
+  width: 95%;
+}
+.bar .progress-line.docker span{
+  width: 85%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #111111;
+  color: #66b95c;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.html span::after{
+  content: "100%";
+}
+.progress-line.css span::after{
+  content: "100%";
+}
+.progress-line.jquery span::after{
+  content: "100%";
+}
+.progress-line.python span::after{
+  content: "95%";
+}
+.progress-line.mysql span::after{
+  content: "95%";
+}
+.progress-line.docker span::after{
+  content: "85%";
 }
