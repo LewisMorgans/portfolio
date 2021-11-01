@@ -46,4 +46,3 @@ testem.log
 Thumbs.db
 sendgrid.env
 node_modules
-sendgrid.env

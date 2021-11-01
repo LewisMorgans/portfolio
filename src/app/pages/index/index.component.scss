@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
 @font-face {
   font-family: TitleFont;
-  src: url('/assets/fonts/aldithRegular.ttf');
+  src: url("/assets/fonts/aldithRegular.ttf");
 }
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
 .container-fluid {
   background: rgb(57, 13, 12);
@@ -31,29 +32,23 @@
 }
 
 .logo {
-  width: 100%;
-  border-radius: 50%;
+  height: 55%;
+  margin: auto;
+  display: block;
 }
 
-.headerText {
-  font-family: TitleFont;
+.logoSubtext {
+  font-size: xx-large;
+  font-family: "Mulish";
   text-transform: uppercase;
   line-height: 1.4;
   width: 100%;
   height: auto;
   text-align: center;
-  padding: 20px 20px;
+  // padding: 20px 20px;
   z-index: 3;
-  p {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 55px;
-  }
-  .lastName {
-    color: #66b95c;
-    text-transform: uppercase;
-    font-size: 55px;
-  }
+  color: #fff;
+  letter-spacing: 1rem;
 }
 
 #arrow-container {
@@ -122,4 +117,3 @@
     transform: translateX(-50%) translateY(-50%);
   }
 }
-

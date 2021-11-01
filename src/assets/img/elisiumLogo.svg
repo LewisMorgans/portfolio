@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <rect x="102.617" y="78.087" width="40.065" height="338.921" style="fill: rgb(102, 185, 92);"/>
+  <rect x="289.044" y="61.324" width="40.065" height="229" style="fill: rgb(102, 185, 92);" transform="matrix(0, 1, -1, 0, 429.918182, -60.494297)"/>
+  <rect x="289.044" y="50.88" width="40.065" height="190" style="fill: rgb(102, 185, 92);" transform="matrix(0, 1, -1, 0, 420.999023, 86.671631)"/>
+  <rect x="289.044" y="50.88" width="40.065" height="190" style="fill: rgb(102, 185, 92);" transform="matrix(0, 1, -1, 0, 418.161285, -211.365967)" bx:origin="0.5 0.485165"/>
+</svg>

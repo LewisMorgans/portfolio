@@ -56,6 +56,7 @@ export class ContactComponent implements OnInit {
     this._http.post<Response>('/api/mail', payload) //http://dixienormus.local/8080/api/mail
       .subscribe(resp => {
         if (resp.httpCode !== 200) {
+          console.log(resp)
           this.send = false;
           this.spinner = true;
           this._snackBarService.openSnackBar('Message failed to send, please try again', 'X')

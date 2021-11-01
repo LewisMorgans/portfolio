@@ -4,19 +4,16 @@ const sgMail = require('@sendgrid/mail');
 const bodyParser = require('body-parser');
 
 // MIDDLEWARE
-sgMail.setApiKey('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');
+sgMail.setApiKey('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')
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 
 // REST
 router.post('/mail', (req, res) => {
-    console.log(process.env.SENDGRID_API_KEY);
-    console.log(req.body)
-
     const msg = {
-        to: 'lmorgans90@gmail.com',
-        from: req.body.email,
-        subject: req.body.subject,
+        to: 'lewis.morgans@weareswift.dev',
+        from: 'info@weareswift.dev',
+        subject: `${req.body.subject} from: ${req.body.email}`,
         text: req.body.message
     };
 
